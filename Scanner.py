@@ -11,10 +11,15 @@ def scan_url(url):
     # Your scanning logic goes here
     # Replace this example logic with your actual URL scanning code
     domain = get_domain(url)
-    if "example" in domain:
-        return "Phishing"
-    else:
-        return "Safe"
+
+    # Check if the domain contains known phishing keywords or patterns
+    phishing_keywords = ["paypal", "example", "phish", "youtube"]
+    for keyword in phishing_keywords:
+        if keyword in domain:
+            return "Phishing"
+
+    return "Safe"
+
 
 class MyHandler(http.server.SimpleHTTPRequestHandler):
     def do_GET(self):
