@@ -1,0 +1,259 @@
+/* Reset some default browser styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Monaco', monospace;
+}
+
+body {
+    background-color: rgb(245, 243, 241);
+    min-height: 100vh;
+}
+
+/* Common styles for header and navigation */
+header {
+    position: absolute;
+    width: 80%;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid rgb(49, 85, 184);
+}
+
+header .logo_container {
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    width: 50px;
+    display: block;
+}
+
+header .logo {
+    color: rgb(34, 123, 206);
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 0.1px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    list-style: none;
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 6px 10px;
+    color: #000000;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+header ul li a.active {
+    background: rgb(49, 85, 184);
+    color: white;
+}
+
+header ul li a:hover
+{
+    background: rgb(49, 85, 184);
+    color: white;
+}
+
+/* Media Query for screens smaller than 768px */
+@media (max-width: 768px) {
+    header {
+        padding: 20px 5px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    top: 10%;
+    justify-content: center;
+    height: auto;
+    position: relative;
+    transform: none;
+    border-bottom: none;
+  }
+
+  header .logo_container {
+    margin-bottom: 20px;
+  }
+
+  header .logo {
+    font-size: 1.2em;
+  }
+
+  header ul {
+    flex-direction: column;
+  }
+
+  header ul li {
+    margin-left: 0;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+
+  header ul li a {
+    padding: 6px 8px;
+  }
+}
+
+.submission-container {
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(25, 12, 199, 0.2);
+}
+
+/* Confirmation Box of the System*/
+.submission-container-2 {
+    text-align: left;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(33, 245, 61, 0.767);
+}
+
+.submission-container-2 h1 {
+    font-size: 20px;
+    color:#009b15;
+}
+
+.submission-label {
+    text-align: right;
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.input-button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+}
+
+.submission-text {
+    width: 900px;
+    max-width: 100%; /* Ensure responsiveness */
+    padding: 10px;
+    height: 20px;
+}
+
+.confirmation-button {
+    background-color: rgb(49, 85, 184);
+    color: white;
+    border: none;
+    padding: 12px 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 30px;
+}
+
+.confirmation-button:hover {
+    background-color: #002e9b;
+}
+
+@media (max-width: 768px) {
+    .submission-text {
+        width: 100%; /* Allow it to take 100% of the available width on smaller screens */
+    }
+}
+
+
+/* loading*/
+.loading {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px; /* Adjust the margin as needed */
+    color: rgb(49, 51, 53); /* Adjust the color as needed */
+}
+
+
+.safe-message {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px; /* Adjust the margin as needed */
+    color: green; /* Adjust the color as needed */
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*About Description*/
+/* Confirmation Box of the System*/
+.submission-container-3{
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: left;
+    position:fixed;
+    top: 30%;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.767);
+}
+
+.submission-container-3 h1 {
+    font-size: 30px;
+    color:#1c638d;
+}
+
+.submission-container-3 h2 {
+    font-size: 20px;
+    color:#000000;
+    text-indent: 50px;
+}
+
+.submission-container-4{
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: left;
+    position:fixed;
+    top: 45%;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.767);
+}
+
+.submission-container-4 h1 {
+    font-size: 30px;
+    color:#594da0;
+}
+
+.submission-container-4 h2 {
+    font-size: 20px;
+    color:#000000;
+    text-indent: 50px;
+}

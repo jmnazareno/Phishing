@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="Something.css">
+    <link rel="stylesheet" href="style.css">
     <title>URL Scanner</title>
 </head>
 <body>
-    <div class="navbar">
-        <a href="#" class="logo">Logo</a>
-        <a href="#home" class="split">Home</a>
-        <a href="#about" class="split">About</a>
-        <a href="#recent-scans" class="split">Recent Scans</a>
-    </div>
-    <div class="bottom-line"></div>
+    <header>
+        <div class="logo_container">
+            <img src="shield_check.png" alt="Our Logo">
+            <a href="#" class="logo">Cyber Safe Clicks</a>
+        </div>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="recent.html">Recent Scans</a></li>
+        </ul>
+    </header>
 
-    <section class="URLSection">
-    <div>
-        <h1>URL Scanner</h1>
-        <form method="POST" action="/scan">
-            <label for="url">Enter URL:</label><br><br>
-            <input type="text" name="url" id="url" required>
-            <input type="submit" value="Scan">
-        </form>
+    <div class="submission-container">
+        <label for="submission-text" class="submission-label">Enter URL Here:</label>
+        <div class="input-button-container">
+            <div class="input-container">
+                <form method="POST" action="/scan">
+                    <input type="text" name ="url" id="submission-text" class="submission-text" rows="4" cols="20" id="url" required></input>
+                    <input type="submit" id="confirmation-button" class="confirmation-button" value="Scan"></input>
+                </form>
+            </div>
+        </div>
     </div>
-    </section>
 </body>
 </html>

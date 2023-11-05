@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Something.css">
+    <title>URL Scanner</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#" class="logo">Logo</a>
+        <a href="#recent-scans" class="split">Recent Scans</a>
+        <a href="#about" class="split">About</a>
+        <a href="#home" class="split">Home</a>
+    </div>
+    <div class="bottom-line"></div>
+
+
+    
+    <section class="URLSection">
+    <div>
+        <h1>URL Scanner</h1>
+        <form method="POST" action="/scan">
+            <label for="url">Enter URL:</label><br><br>
+            <input type="text" name="url" id="url" required>
+            <input type="submit" value="Scan">
+        </form>
+    </div>
+    </section>
+</body>
+</html>
